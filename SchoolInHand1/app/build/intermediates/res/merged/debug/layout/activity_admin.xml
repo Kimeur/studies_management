@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="-1dp"
+    android:paddingTop="-1dp"
+    tools:context="com.example.schoolinhand.AdminActivity" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#003366"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Profile Administrateur"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:paddingTop="12dp" >
+
+        <Button
+            android:id="@+id/modifierNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AjouterMat"
+            android:layout_alignRight="@+id/AjouterNote"
+            android:layout_below="@+id/AjouterNote"
+            android:text="Ajouter Enseignant" />
+
+        <Button
+            android:id="@+id/AjouterMat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AfficherListes"
+            android:layout_alignRight="@+id/AjouterNote"
+            android:layout_below="@+id/modifierNote"
+            android:layout_marginTop="46dp"
+            android:text="Ajouter Matière" />
+
+        <Button
+            android:id="@+id/AjouterNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AfficherListes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:text="Ajouter Etudiant" />
+
+        <Button
+            android:id="@+id/charger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AfficherListes"
+            android:layout_alignRight="@+id/AjouterMat"
+            android:layout_below="@+id/AjouterMat"
+            android:text="Charger Fichiers" />
+
+        <Button
+            android:id="@+id/AfficherListes"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/charger"
+            android:text="Afficher les listes" />
+
+        <Button
+            android:id="@+id/AjouterCla"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AjouterMat"
+            android:layout_alignRight="@+id/modifierNote"
+            android:layout_below="@+id/modifierNote"
+            android:text="Ajouter Classe" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#003366"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/decoAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:text="Se deconnecter" />
+    </LinearLayout>
+
+</RelativeLayout>

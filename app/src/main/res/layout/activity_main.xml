@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gazouzi.studies_management.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        android:background="#003366"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/add_student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Studies Management Application, where you can add your promotion students, add teachers, add a subject."
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_student"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="174dp"
+        android:layout_height="0dp"
+        android:layout_alignEnd="@+id/show_list"
+        android:layout_alignLeft="@+id/show_list"
+        android:layout_alignRight="@+id/show_list"
+        android:layout_alignStart="@+id/show_list"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="72dp"
+        android:background="@color/colorAccent"
+        android:text="Add a Student"
+        app:layout_constraintBottom_toTopOf="@+id/add_subject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/show_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:background="@color/colorAccent"
+        android:text="Show Students List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/add_teacher"
+        app:layout_constraintStart_toStartOf="@+id/add_subject"
+        app:layout_constraintTop_toBottomOf="@+id/add_teacher" />
+
+    <Button
+        android:id="@+id/add_teacher"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignEnd="@+id/add_student"
+        android:layout_alignLeft="@+id/add_student"
+        android:layout_alignRight="@+id/add_student"
+        android:layout_alignStart="@+id/add_student"
+        android:layout_below="@+id/add_student"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="3dp"
+        android:background="@color/colorAccent"
+        android:text="Add a teacher"
+        app:layout_constraintBottom_toTopOf="@+id/show_list"
+        app:layout_constraintEnd_toEndOf="@+id/add_subject"
+        app:layout_constraintStart_toStartOf="@+id/add_student"
+        app:layout_constraintTop_toBottomOf="@+id/add_subject" />
+
+    <Button
+        android:id="@+id/add_subject"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_alignEnd="@+id/show_list"
+        android:layout_alignLeft="@+id/show_list"
+        android:layout_alignRight="@+id/show_list"
+        android:layout_alignStart="@+id/show_list"
+        android:layout_below="@+id/add_teacher"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="72dp"
+        android:background="@color/colorAccent"
+        android:text="Add a Subject"
+        app:layout_constraintBottom_toTopOf="@+id/add_teacher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_student" />
+
+</android.support.constraint.ConstraintLayout>
